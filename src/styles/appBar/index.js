@@ -17,7 +17,9 @@ export const AppBarContainer = styled(Box)(({theme}) => ({
     [theme.breakpoints.down('md')]: {
         margin: "0px 0px 0px 0px",
     },
-    // position: 'fixed'
+    position: 'fixed',
+    backgroundColor: '#fff',
+    width: '100%',
 }));
 
 export const AppBarHeader = styled(Typography)(({theme}) => ({
