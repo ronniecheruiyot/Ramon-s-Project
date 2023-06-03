@@ -16,9 +16,8 @@ import { Icon } from '@mui/material';
 import {Star, StarOutline} from "@mui/icons-material";
 
 export default function DesktopBanner(){
-    const ref = useRef(null);
     return(
-        <BannerContainer ref={ref}>
+        <BannerContainer>
             <BannerContent>
                 <PaperItem>
                 <BannerTitle>

@@ -7,7 +7,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import {NavLink} from "react-router-dom";
 
-const NavBarMobile = () => {
+const NavBarMobile = (props) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
 
@@ -18,12 +18,6 @@ const NavBarMobile = () => {
 
     const handleClose = () => {
         setAnchorEl(null);
-    };
-
-    const handleMenuItemSelected = (page) => {
-        console.log("selected value", page);
-        // page === "home" ? <NavLink></NavLink> : ""
-        handleClose();
     };
 
     return (
@@ -52,21 +46,29 @@ const NavBarMobile = () => {
                 open={open}
                 onClose={handleClose}
             >
-                <NavLink to={'/'}>
-                    <MenuItem key={'home'} value={'home'} onClick={() => handleMenuItemSelected('home')}>
+                {/*<NavLink to={'/'}>*/}
+                    <MenuItem key={'home'} value={'home'}
+                              onClick={() => {
+                                  props.handleHomeClicked();
+                                  // handleClose();
+                              }}>
                         Home
                     </MenuItem>
-                </NavLink>
-                <NavLink to={'/'}>
-                    <MenuItem key={'products'} value={'products'} onClick={() => handleMenuItemSelected('products')}>
+                {/*</NavLink>*/}
+                {/*<NavLink to={'/'}>*/}
+                    <MenuItem key={'products'} value={'products'}
+                              onClick={() => {
+                                  props.handleContentClicked();
+                                  // handleClose();
+                              }}>
                         Products
                     </MenuItem>
-                </NavLink>
-                <NavLink to={'/'}>
-                    <MenuItem key={'contact'} value={'contact'} onClick={() => handleMenuItemSelected('contact')}>
-                        Contact
-                    </MenuItem>
-                </NavLink>
+                {/*</NavLink>*/}
+                {/*<NavLink to={'/'}>*/}
+                {/*    <MenuItem key={'contact'} value={'contact'} onClick={() => handleMenuItemSelected('contact')}>*/}
+                {/*        Contact*/}
+                {/*    </MenuItem>*/}
+                {/*</NavLink>*/}
             </Menu>
             <AppBarHeader textAlign={'center'} > Ramon's Farm </AppBarHeader>
         </AppBarContainer>

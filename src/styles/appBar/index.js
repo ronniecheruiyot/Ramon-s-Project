@@ -33,6 +33,7 @@ export const AppBarHeader = styled(Typography)(({theme}) => ({
     [theme.breakpoints.up("md")]: {
         marginLeft: '135px'
     },
+    cursor: 'pointer',
 }));
 
 export const MyList = styled(List)(({type, theme}) => ({

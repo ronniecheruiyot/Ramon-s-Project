@@ -4,13 +4,7 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 import {useRef} from 'react';
 
-const NavBarDesktop = () => {
-    const ref = useRef(null);
-
-    const handleClick = () => {
-        ref.current?.scrollIntoView({behavior: 'smooth'});
-    };
-
+const NavBarDesktop = (props) => {
     return (
         /**
          * Container,
@@ -18,10 +12,10 @@ const NavBarDesktop = () => {
          * List
          */
         <AppBarContainer>
-            <AppBarHeader>Ramon's Farm</AppBarHeader>
+            <AppBarHeader onClick={props.handleHomeClicked}>Ramon's Farm</AppBarHeader>
             <MyList type={'row'}>
-                <ListText>Home</ListText>
-                <ListText>Products & Services</ListText>
+                <ListText onClick={props.handleHomeClicked}>Home</ListText>
+                <ListText onClick={props.handleContentClicked}>Products & Services</ListText>
             </MyList>
         </AppBarContainer>
     );
