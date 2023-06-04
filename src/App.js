@@ -3,7 +3,6 @@ import './App.css';
 import Home from "./pages/home";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import theme from "./styles/theme";
-import Products from "./pages/products";
 
 function App() {
   return (
