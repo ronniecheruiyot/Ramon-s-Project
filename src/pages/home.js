@@ -1,5 +1,4 @@
 import React from "react";
-import AppBar from "./appBar/appBar";
 import Banner from "./banner/banner";
 import Content from "./content/content";
 import Footer from "./footer/footer";

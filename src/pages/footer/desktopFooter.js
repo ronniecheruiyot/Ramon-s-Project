@@ -1,13 +1,7 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
-import {FooterContainer, FooterContent, FooterDescription, FooterTitle} from "../../styles/footer";
+import {FooterContainer, FooterContent, FooterDescription} from "../../styles/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faYoutube,
-    faFacebook,
-    faTwitter,
-    faInstagram
-} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 
 export default function DesktopFooter() {
     return(

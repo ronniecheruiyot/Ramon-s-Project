@@ -3,11 +3,9 @@ import {
     BannerContainer,
     BannerContent,
     BannerDescription, BannerDescription1,
-    BannerImage, BannerQuality,
+    BannerQuality,
     BannerTitle,
-    PaperItem
 } from "../../styles/banner";
-import Box from "@mui/material/Box";
 import {useRef} from 'react';
 import {Icon} from "@mui/material";
 import {Star, StarOutline} from "@mui/icons-material";

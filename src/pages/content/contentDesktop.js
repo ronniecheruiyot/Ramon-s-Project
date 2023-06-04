@@ -3,7 +3,6 @@ import {
     ContentContainer,
     ContentDescription,
     ContentHeader,
-    ContentImage,
     ContentBox,
     ContentTitle, HeaderContainer
 } from "../../styles/content";

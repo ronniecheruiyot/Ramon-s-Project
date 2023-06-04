@@ -1,11 +1,9 @@
 import React from "react";
-import {AppBarContainer, AppBarHeader, MyList} from "../../styles/appBar";
-import ListItemText from "@mui/material/ListItemText/ListItemText";
+import {AppBarContainer, AppBarHeader} from "../../styles/appBar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import {NavLink} from "react-router-dom";
 
 const NavBarMobile = (props) => {
     const [anchorEl, setAnchorEl] = React.useState(null);

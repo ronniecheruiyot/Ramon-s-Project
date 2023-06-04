@@ -1,8 +1,5 @@
 import React from "react";
 import {AppBarContainer, AppBarHeader, ListText, MyList} from "../../styles/appBar";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemButton from "@mui/material/ListItemButton";
-import {useRef} from 'react';
 
 const NavBarDesktop = (props) => {
     return (

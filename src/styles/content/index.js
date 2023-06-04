@@ -1,7 +1,6 @@
 import styled from "@mui/material/styles/styled";
 import Box from "@mui/material/Box";
 import {Typography} from "@mui/material";
-import Paper from "@mui/material/Paper";
 
 export const ContentContainer = styled(Box)(({theme}) => ({
     // marginTop: '20px',

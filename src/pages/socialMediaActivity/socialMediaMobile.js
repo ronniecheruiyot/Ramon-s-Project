@@ -1,5 +1,4 @@
 import React from "react";
-import { Gallery } from "react-grid-gallery";
 import {
     Container,
     DataContainer,
@@ -8,7 +7,6 @@ import {
     MediaHeader,
     MediaHeaderContainer
 } from "../../styles/socialMedia";
-import {ContentHeader, HeaderContainer} from "../../styles/content";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 

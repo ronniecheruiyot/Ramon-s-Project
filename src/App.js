@@ -10,7 +10,6 @@ function App() {
       <ThemeProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
       </Routes>
       </ThemeProvider>
   );

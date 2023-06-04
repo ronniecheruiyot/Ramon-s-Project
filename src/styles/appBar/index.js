@@ -1,10 +1,8 @@
 import styled from "@mui/material/styles/styled";
 import {Typography} from "@mui/material";
 import Box from "@mui/material/Box";
-import {colors} from "../theme";
 import "@fontsource/poppins";
 import List from "@mui/material/List";
-import {breakpoints} from "@mui/system"; // Defaults to weight 400.
 
 //Container
 export const AppBarContainer = styled(Box)(({theme}) => ({
