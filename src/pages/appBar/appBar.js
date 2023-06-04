@@ -6,10 +6,10 @@ import React from "react";
 
 export default function AppBar(){
     const theme = useTheme();
-    const viewPort = useMediaQuery(theme.breakpoints.down('md')); //if true, this is a mobile viewPort
+    const viewPort = useMediaQuery(theme.breakpoints.up('lg'));
 
     return(
-        viewPort ? <NavBarMobile/> : <NavBarDesktop/>
+        viewPort ? <NavBarDesktop/> : <NavBarMobile/>
 
     );
 }

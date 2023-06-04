@@ -16,10 +16,14 @@ export const AppBarContainer = styled(Box)(({theme}) => ({
     padding: '2px 8px',
     [theme.breakpoints.down('md')]: {
         margin: "0px 0px 0px 0px",
+        // position: 'absolute',
     },
+    top: 0,
     position: 'fixed',
     backgroundColor: '#fff',
     width: '100%',
+    overflow: 'hidden',
+    zIndex: 1,
 }));
 
 export const AppBarHeader = styled(Typography)(({theme}) => ({

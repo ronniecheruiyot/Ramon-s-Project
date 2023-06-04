@@ -12,7 +12,7 @@ const NavBarDesktop = (props) => {
          * List
          */
         <AppBarContainer>
-            <AppBarHeader onClick={props.handleHomeClicked}>Ramon's Farm</AppBarHeader>
+            <AppBarHeader>Ramon's Farm</AppBarHeader>
             <MyList type={'row'}>
                 <ListText onClick={props.handleHomeClicked}>Home</ListText>
                 <ListText onClick={props.handleContentClicked}>Products & Services</ListText>

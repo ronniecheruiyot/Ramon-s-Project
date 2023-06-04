@@ -9,6 +9,8 @@ import {
     MediaHeaderContainer
 } from "../../styles/socialMedia";
 import {ContentHeader, HeaderContainer} from "../../styles/content";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 
 
 const images = [
@@ -77,14 +79,31 @@ export default function SocialMediaDesktop() {
                     </MediaContent>
                 </MediaDetailContainer>
                 <DataContainer>
-                    <MediaDetailContainer></MediaDetailContainer>
+                    {/*<MediaDetailContainer></MediaDetailContainer>*/}
                     <MediaContainer>
-                        <Gallery images={images}
-                                 margin={5}
-                                 onClick={() => {
-                                     openInNewTab("https://www.facebook.com/DorperHerdByRamon/photos");
-                                 }}
-                        />
+                        {/*<Gallery images={images}*/}
+                        {/*         margin={5}*/}
+                        {/*         onClick={() => {*/}
+                        {/*             openInNewTab("https://www.facebook.com/DorperHerdByRamon/photos");*/}
+                        {/*         }}*/}
+                        {/*/>*/}
+                        <ImageList variant="masonry" cols={3} gap={8}>
+                            {images && images.length > 0 && images.map((item, i) => {
+                                return(
+                                    <ImageListItem key={i}
+                                                   onClick={() => {
+                                                       openInNewTab("https://www.facebook.com/DorperHerdByRamon/photos");
+                                                   }}>
+                                        <img
+                                            src={item.src}
+                                            // srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                            alt={'IMG'}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                );
+                            })}
+                        </ImageList>
                     </MediaContainer>
                 </DataContainer>
             </Container>

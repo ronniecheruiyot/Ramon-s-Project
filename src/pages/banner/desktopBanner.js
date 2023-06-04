@@ -45,7 +45,7 @@ export default function DesktopBanner(){
                     src={img}
                     sx={{
                         width: "100%",
-                        height: "70%",
+                        height: "60%",
                         objectFit: "cover",
                         borderRadius: "40px 40px 40px 40px",
                         marginRight: '80px'

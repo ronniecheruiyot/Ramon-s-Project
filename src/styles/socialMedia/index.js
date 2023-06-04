@@ -29,8 +29,8 @@ export const MediaContainer = styled(Box)(({theme}) => ({
             height: 'auto',
     },
     [theme.breakpoints.up('lg')]: {
-        marginLeft: "600px",
-            marginRight: "450px",
+        marginLeft: "500px",
+            marginRight: "500px",
         width: '40%',
         // height: 'auto',
     },

@@ -26,18 +26,21 @@ export default function Home() {
     const viewPort = useMediaQuery(theme.breakpoints.down('md')); //if true, this is a mobile viewPort
 
     return(
+    <div>
+        <div style={{marginBottom: viewPort ? '50px' : '20px'}}>
+        {viewPort ?
+            <NavBarMobile
+                handleHomeClicked={handleHomeClicked}
+                handleContentClicked={handleContentClicked}
+            />
+            :
+            <NavBarDesktop
+                handleHomeClicked={handleHomeClicked}
+                handleContentClicked={handleContentClicked}
+            />
+        }
+        </div>
         <div>
-            {viewPort ?
-                <NavBarMobile
-                    handleHomeClicked={handleHomeClicked}
-                    handleContentClicked={handleContentClicked}
-                />
-                :
-                <NavBarDesktop
-                    handleHomeClicked={handleHomeClicked}
-                    handleContentClicked={handleContentClicked}
-                />
-            }
             <div ref={ref}>
                 <Banner/>
             </div>
@@ -51,5 +54,6 @@ export default function Home() {
                 <Footer/>
             </div>
         </div>
+    </div>
     )
 }

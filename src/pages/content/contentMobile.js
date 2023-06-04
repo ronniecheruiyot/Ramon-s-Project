@@ -36,7 +36,7 @@ export default function ContentMobile() {
                     src={tractorImg}
                     sx={{
                         width: "100%",
-                        height: "40%",
+                        height: "30%",
                         objectFit: "cover",
                         borderRadius: "10px 10px 10px 10px",
                     }}
@@ -57,7 +57,7 @@ export default function ContentMobile() {
                     src={feeding}
                     sx={{
                         width: "100%",
-                        height: "40%",
+                        height: "30%",
                         objectFit: "cover",
                         borderRadius: "10px 10px 10px 10px",
                     }}
@@ -78,7 +78,7 @@ export default function ContentMobile() {
                     src={vaccination}
                     sx={{
                         width: "100%",
-                        height: "40%",
+                        height: "30%",
                         objectFit: "cover",
                         borderRadius: "10px 10px 10px 10px",
                     }}

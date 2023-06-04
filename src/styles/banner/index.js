@@ -9,7 +9,7 @@ export const BannerContainer = styled(Box)(({theme}) => ({
     display: 'flex',
     // justifyContent: 'center',
     width: '100%',
-    height: '900px',
+    height: '950px',
     padding: '0px 0px',
     // background: colors.lightgray,
     [theme.breakpoints.down('md')]: {
@@ -130,5 +130,6 @@ export const BannerQuality = styled(Box)(({theme}) => ({
     },
     [theme.breakpoints.up('md')]: {
         marginLeft: '70px',
-    }
+    },
+    cursor: 'pointer'
 }));
